@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charms Makeup | Maquiagem e Cosméticos</title>
+  <meta name="description" content="Charms Makeup: maquiagem e cosméticos para realçar a sua beleza.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/icon.png" type="icon/png">
+
+  <!-- A ordem importa: reset > variáveis > estilo -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__conteudo">
+      <a href="index.html" class="logo">Charms Makeup</a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="menu">
+        <a href="#categorias">Categorias</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Realce a sua beleza</h1>
+        <p>Maquiagem e cosméticos selecionados para você se sentir incrível todos os dias.</p>
+        <a href="#destaques" class="btn">Ver produtos</a>
+      </div>
+    </section>
+
+    <section class="secao" id="categorias">
+      <div class="container">
+        <h2 class="secao__titulo">Categorias</h2>
+        <p class="secao__subtitulo">Encontre o que você procura</p>
+        <div class="categorias">
+          <a href="#destaques" class="categoria">Lábios</a>
+          <a href="#destaques" class="categoria">Olhos</a>
+          <a href="#destaques" class="categoria">Rosto</a>
+          <a href="#destaques" class="categoria">Skincare</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="destaques">
+      <div class="container">
+        <h2 class="secao__titulo">Produtos em destaque</h2>
+        <p class="secao__subtitulo">Os queridinhos da nossa loja</p>
+        <div class="produtos" id="lista-produtos"><!-- preenchido pelo js/main.js --></div>
+      </div>
+    </section>
+
+    <section class="secao sobre" id="sobre">
+      <div class="container">
+        <h2 class="secao__titulo">Sobre a Charms Makeup</h2>
+        <p class="sobre__texto">Aqui entra a história da marca, a missão e o que a torna especial. Substitua este texto pelo conteúdo enviado pelo cliente.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <h2 class="secao__titulo">O que dizem nossas clientes</h2>
+        <p class="secao__subtitulo">Depoimentos de quem já usa</p>
+        <div class="depoimentos">
+          <blockquote class="depoimento"><p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong></blockquote>
+          <blockquote class="depoimento"><p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong></blockquote>
+          <blockquote class="depoimento"><p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong></blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="contato">
+    <div class="container">
+      <p><strong>Charms Makeup</strong></p>
+      <p>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">E-mail</a>
+      </p>
+      <small>© 2026 Charms Makeup. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <div class="aviso" role="status"></div>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

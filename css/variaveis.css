@@ -1,0 +1,39 @@
+/* ==========================================================
+   VARIÁVEIS GLOBAIS - Charms Makeup
+   Troque os valores abaixo pelas cores da identidade visual.
+   Todo o site usa APENAS estas variáveis (nunca códigos de cor soltos).
+   ========================================================== */
+:root {
+  /* --- Cores da marca (SUBSTITUIR pelos códigos do cliente) --- */
+  --cor-primaria: #ee6983;          /* cor principal: botões, links, destaques */
+  --cor-primaria-escura: #850e35;   /* hover dos botões */
+  --cor-primaria-clara: #ffc4c4;    /* fundos suaves, selos */
+  --cor-secundaria: #2B2226;        /* cor de apoio: rodapé, títulos fortes */
+  --cor-destaque: #C9A24D;          /* detalhes especiais (ex.: dourado) */
+
+  /* --- Neutras --- */
+  --cor-fundo: #FFF8FA;             /* fundo geral da página */
+  --cor-superficie: #FFFFFF;        /* cards, header */
+  --cor-borda: #F0DDE4;
+  --cor-texto: #2B2226;
+  --cor-texto-suave: #6F6268;
+  --cor-texto-inverso: #FFFFFF;     /* texto sobre fundo escuro/primário */
+
+  /* --- Tipografia (SUBSTITUIR se o cliente tiver fontes próprias) --- */
+  --fonte-titulo: 'Playfair Display', Georgia, serif;
+  --fonte-corpo: 'Poppins', system-ui, -apple-system, sans-serif;
+
+  /* --- Espaçamentos --- */
+  --espaco-xs: 0.5rem;
+  --espaco-sm: 1rem;
+  --espaco-md: 1.5rem;
+  --espaco-lg: 3rem;
+  --espaco-xl: 5rem;
+
+  /* --- Outros --- */
+  --raio: 12px;
+  --raio-botao: 999px;
+  --sombra: 0 6px 20px rgba(43, 34, 38, 0.08);
+  --largura-max: 1140px;
+  --transicao: 0.25s ease;
+}
