@@ -1,0 +1,62 @@
+/* ---------- Página de cadastro ---------- */
+.cadastro {
+  background: linear-gradient(135deg, var(--cor-primaria-clara), var(--cor-fundo));
+  padding-block: var(--espaco-xl);
+}
+.cadastro__card {
+  max-width: 720px; margin-inline: auto;
+  background: var(--cor-superficie);
+  border-radius: var(--raio); box-shadow: var(--sombra);
+  padding: var(--espaco-lg) var(--espaco-md);
+}
+.cadastro__intro { text-align: center; margin-bottom: var(--espaco-lg); }
+.cadastro__intro h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); margin-bottom: var(--espaco-xs); }
+.cadastro__intro h1 span { color: var(--cor-primaria); }
+.cadastro__intro p { color: var(--cor-texto-suave); max-width: 520px; margin-inline: auto; }
+
+/* ---------- Formulário ---------- */
+.form__titulo {
+  font-size: 1.2rem; color: var(--cor-secundaria);
+  padding-bottom: var(--espaco-xs); margin: var(--espaco-md) 0 var(--espaco-sm);
+  border-bottom: 2px solid var(--cor-primaria-clara);
+}
+.form__grade { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--espaco-sm); }
+.campo--4  { grid-column: span 4; }
+.campo--3  { grid-column: span 3; }
+.campo--5  { grid-column: span 5; }
+.campo--6  { grid-column: span 6; }
+.campo--8  { grid-column: span 8; }
+.campo--12 { grid-column: span 12; }
+
+.campo label { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 0.3rem; }
+.campo .opcional { color: var(--cor-texto-suave); font-weight: 400; }
+.campo input, .campo select {
+  width: 100%; padding: 0.75rem 0.9rem;
+  font: inherit; color: var(--cor-texto);
+  background: var(--cor-fundo);
+  border: 1.5px solid var(--cor-borda); border-radius: var(--raio);
+  transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+.campo input::placeholder { color: var(--cor-texto-suave); opacity: 0.6; }
+.campo input:focus, .campo select:focus {
+  outline: none; border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px var(--cor-primaria-clara);
+}
+/* Só marca erro depois que o campo foi preenchido/tocado */
+.campo input:user-invalid, .campo select:user-invalid { border-color: var(--cor-primaria-escura); }
+
+.form__enviar { width: 100%; margin-top: var(--espaco-md); padding: 1rem; font-size: 1rem; }
+.form__nota { text-align: center; margin-top: var(--espaco-sm); font-size: 0.9rem; color: var(--cor-texto-suave); }
+.form__nota a { color: var(--cor-primaria); font-weight: 500; }
+.form__nota a:hover { text-decoration: underline; }
+
+.menu__ativo { color: var(--cor-primaria) !important; font-weight: 500; }
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 600px) {
+  .cadastro { padding-block: var(--espaco-lg); }
+  .cadastro__card { padding: var(--espaco-md) var(--espaco-sm); }
+  .campo--3, .campo--4, .campo--5, .campo--6, .campo--8 { grid-column: span 12; }
+  /* mantém Número e Estado/Cidade mais compactos lado a lado quando possível */
+  .campo--3 { grid-column: span 12; }
+}
