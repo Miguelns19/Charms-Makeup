@@ -17,6 +17,7 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
   border-radius: var(--raio-botao); font-weight: 500;
   transition: background var(--transicao), transform var(--transicao);
 }
+
 .btn:hover { background: var(--cor-primaria-escura); transform: translateY(-2px); }
 .btn--contorno { background: transparent; color: var(--cor-primaria); border: 2px solid var(--cor-primaria); }
 .btn--contorno:hover { background: var(--cor-primaria); color: var(--cor-texto-inverso); }
@@ -24,7 +25,7 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
 /* ---------- Header ---------- */
 .header { position: sticky; top: 0; z-index: 10; background: var(--cor-superficie); border-bottom: 1px solid var(--cor-borda); }
 .header__conteudo { display: flex; align-items: center; justify-content: space-between; padding-block: var(--espaco-sm); }
-.logo { font-family: var(--fonte-titulo); font-size: 1.6rem; color: var(--cor-primaria); font-weight: 700; }
+.logo { font-family: var(--fonte-titulo); font-size: 1.6rem; color: var(--cor-primaria); font-weight: 700; margin: -15px;}
 .menu { display: flex; gap: var(--espaco-md); }
 .menu a { color: var(--cor-texto-suave); transition: color var(--transicao); }
 .menu a:hover { color: var(--cor-primaria); }
