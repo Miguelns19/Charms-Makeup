@@ -30,7 +30,7 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
 .menu a { color: var(--cor-texto-suave); transition: color var(--transicao); }
 .menu a:hover { color: var(--cor-primaria); }
 .menu-toggle { display: none; font-size: 1.6rem; color: var(--cor-texto); }
-.menu-pesquisa { display: flex; align-items: center; gap: var(--espaco-xs); width: 230px; min-height: 44px; padding: 0.5rem 0.9rem; border: 1px solid var(--cor-borda); border-radius: var(--raio-botao); background: var(--cor-fundo); color: var(--cor-texto-suave); }
+.menu-pesquisa { display: flex; align-items: center; margin: -5px; gap: var(--espaco-xs); width: 230px; min-height: 44px; padding: 0.5rem 0.9rem; border: 1px solid var(--cor-borda); border-radius: var(--raio-botao); background: var(--cor-fundo); color: var(--cor-texto-suave); }
 .menu-pesquisa svg { flex-shrink: 0; }
 .menu-pesquisa input { width: 100%; min-width: 0; border: none; background: transparent; color: var(--cor-texto); font: inherit; font-size: 1rem; }
 .menu-pesquisa input::placeholder { color: var(--cor-texto-suave); opacity: 1; }
