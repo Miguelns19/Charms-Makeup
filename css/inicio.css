@@ -80,3 +80,8 @@
  .add { padding: 12px 5px; letter-spacing: .4px; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none !important; } }
+
+/* Catálogo: cinco categorias e consulta de preços. */
+.cats { grid-template-columns: repeat(5,minmax(0,1fr)); }
+.product-card .add { text-align: center; display: block; box-sizing: border-box; }
+@media(max-width:800px) { .cats { grid-template-columns: repeat(2,minmax(0,1fr)); } }
