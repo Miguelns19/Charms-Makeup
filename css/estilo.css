@@ -4,17 +4,19 @@ body {
   background: var(--cor-fundo);
   color: var(--cor-texto);
 }
+
 h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
 .container { width: min(100% - 2rem, var(--largura-max)); margin-inline: auto; }
 .secao { padding-block: var(--espaco-xl); }
 .secao__titulo { text-align: center; font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: var(--espaco-xs); }
 .secao__subtitulo { text-align: center; color: var(--cor-texto-suave); margin-bottom: var(--espaco-lg); }
 
+
 /* ---------- Botões ---------- */
 .btn {
   display: inline-block; padding: 0.8rem 1.8rem;
   background: var(--cor-primaria); color: var(--cor-texto-inverso);
-  border-radius: var(--raio-botao); font-weight: 500;
+  font-weight: 500;
   transition: background var(--transicao), transform var(--transicao);
 }
 
@@ -41,6 +43,7 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
 .hero {
   background: linear-gradient(135deg, var(--cor-primaria-clara), var(--cor-fundo));
   text-align: center; padding-block: 7rem;
+  margin-bottom: 25px;
 }
 .hero h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); margin-bottom: var(--espaco-sm); }
 .hero p { max-width: 520px; margin: 0 auto var(--espaco-md); color: var(--cor-texto-suave); }
@@ -49,15 +52,16 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
 .categorias { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--espaco-md); }
 .categoria {
   background: var(--cor-superficie); border: 1px solid var(--cor-borda);
-  border-radius: var(--raio); padding: var(--espaco-lg) var(--espaco-sm);
+  padding: var(--espaco-xxl) var(--espaco-sm) var(--espaco-sm);
   text-align: center; font-family: var(--fonte-titulo); font-size: 1.2rem;
   transition: box-shadow var(--transicao), transform var(--transicao);
 }
 .categoria:hover { box-shadow: var(--sombra); transform: translateY(-4px); color: var(--cor-primaria); }
 
+
 /* ---------- Produtos ---------- */
-.produtos { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: var(--espaco-md); }
-.produto { background: var(--cor-superficie); border-radius: var(--raio); overflow: hidden; box-shadow: var(--sombra); display: flex; flex-direction: column; }
+.produtos { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--espaco-md); }
+.produto { background: var(--cor-superficie); overflow: hidden; box-shadow: var(--sombra); display: flex; flex-direction: column; }
 .produto__imagem { aspect-ratio: 1; background: var(--cor-primaria-clara); object-fit: cover; width: 100%; }
 .produto__corpo { padding: var(--espaco-sm); display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
 .produto__categoria { font-size: 0.8rem; color: var(--cor-destaque); text-transform: uppercase; letter-spacing: 1px; }
@@ -71,8 +75,8 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
 
 /* ---------- Depoimentos ---------- */
 .carrossel-depoimentos { max-width: 680px; margin-inline: auto; }
-.depoimentos { display: flex; overflow: hidden; scroll-snap-type: x mandatory; border-radius: var(--raio); }
-.depoimento { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; background: var(--cor-superficie); border-left: 4px solid var(--cor-primaria); border-radius: var(--raio); padding: var(--espaco-md); box-shadow: var(--sombra); }
+.depoimentos { display: flex; overflow: hidden; scroll-snap-type: x mandatory;}
+.depoimento { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; background: var(--cor-superficie); border-left: 4px solid var(--cor-primaria); padding: var(--espaco-md); box-shadow: var(--sombra); }
 .depoimento p { font-style: italic; margin-bottom: var(--espaco-xs); }
 .depoimento strong { color: var(--cor-primaria); }
 .carrossel-controles { display: flex; align-items: center; justify-content: center; gap: var(--espaco-md); margin-top: var(--espaco-md); }
@@ -117,7 +121,7 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
 
 /* ---------- Aviso "Em breve" ---------- */
 .aviso {
-  position: fixed; bottom: 1.5rem; left: 50%; transform: translate(-50%, 150%);
+  position: fixed; bottom: 1.5rem; left: 50%; transform: translate(-50%, 200%);
   background: var(--cor-secundaria); color: var(--cor-texto-inverso);
   padding: 0.8rem 1.5rem; border-radius: var(--raio-botao);
   transition: transform var(--transicao); z-index: 20;

@@ -29,11 +29,12 @@
   --espaco-md: 1.5rem;
   --espaco-lg: 3rem;
   --espaco-xl: 5rem;
+  --espaco-xxl: 30rem;
 
   /* --- Outros --- */
   --raio: 12px;
   --raio-botao: 999px;
   --sombra: 0 6px 20px rgba(43, 34, 38, 0.08);
-  --largura-max: 1140px;
+  --largura-max: 1340px;
   --transicao: 0.25s ease;
 }
