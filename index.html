@@ -1,51 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Charms Makeup | Seu charme, do seu jeito</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/variaveis.css">
-<link rel="stylesheet" href="css/inicio.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0GPN36VDHM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-0GPN36VDHM');
-</script>
-<link rel="icon" href="img/icon.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charms Makeup | Seu charme, do seu jeito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GPN36VDHM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0GPN36VDHM');
+  </script>
+  <link rel="icon" href="img/icon.png">
 </head>
+
 <body id="topo">
-<div class="announcement">BELEZA, PERSONALIDADE E MUITO CHARME ♡</div>
-<header class="top"><div class="search"><span>⌕</span><input id="search" placeholder="O que você procura?" aria-label="Buscar produtos"></div><a class="brand" href="#inicio"><strong>charms</strong><span>MAKEUP</span></a><div class="head-actions"><button class="icon-btn" onclick="document.querySelector('#produtos').scrollIntoView({behavior:'smooth'})" aria-label="Ver produtos">♡</button><button class="icon-btn" onclick="toggleCart(true)" aria-label="Abrir sacola">♧<span class="counter" id="count">0</span></button></div></header>
-<nav class="nav" aria-label="Navegação principal"><a href="#produtos" onclick="filterCategory('Todos')">Todos os produtos</a><a href="#categorias">Categorias</a><a href="#produtos" onclick="filterCategory('Maquiagem')">Maquiagem</a><a href="#produtos" onclick="filterCategory('Corpo')">Corpo</a><a href="#experiencia">Experiência Charms</a><a href="#sobre">Sobre a loja</a><a href="cadastro.html">Cadastre-se</a></nav>
-<main id="inicio"><section class="hero"><div class="hero-copy"><div class="eyebrow">Bem-vinda ao universo Charms</div><h1>Seu charme,<br><em>do seu jeito.</em></h1><p>Um universo de beleza para você experimentar, se expressar e descobrir seus novos favoritos.</p><a href="#produtos" class="cta">Explorar produtos</a></div><div class="hero-visual" aria-hidden="true"><div class="orb"></div><div class="compact"><span>charms</span></div><div class="lipstick"><div class="tip"></div><div class="ring"></div><div class="case"></div></div><div class="floating">be you, be charms ♡</div></div></section>
-<div class="trust"><span>♡ Beleza para todos os estilos</span><span>✧ Variedade de produtos e marcas</span><span>⌂ Nossa loja fica em Tietê — SP</span></div>
-<section class="section" id="categorias"><div class="section-heading"><span class="eyebrow">Encontre seus favoritos</span><h2>Um charme para cada momento</h2><p>Explore o que combina com você.</p></div><div class="cats"><a href="#produtos" class="cat" onclick="filterCategory('Maquiagem')"><span class="emoji">💄</span><strong>Maquiagem</strong></a><a href="#produtos" class="cat" onclick="filterCategory('Corpo')"><span class="emoji">🧴</span><strong>Corpo</strong></a><a href="#produtos" class="cat" onclick="filterCategory('Fragrância')"><span class="emoji">🌸</span><strong>Fragrância</strong></a><a href="#produtos" class="cat" onclick="filterCategory('Acessórios')"><span class="emoji">🖌️</span><strong>Acessórios</strong></a><a href="#produtos" class="cat" onclick="filterCategory('Olhos')"><span class="emoji">🎨</span><strong>Olhos</strong></a></div></section>
-<section class="section" id="produtos" style="padding-top:25px"><div class="section-heading"><span class="eyebrow">Seleção Charms</span><h2>Os queridinhos da vez</h2><p>Inspirações para sua próxima descoberta.</p></div><div class="toolbar"><div class="chips" id="filters"></div><span style="font-size:12px;color:var(--muted)" id="results"></span></div><div class="product-grid" id="grid"></div><p class="note" style="text-align:center;margin-top:25px">Consulte os valores e a disponibilidade dos produtos pelo WhatsApp.</p></section>
-<section class="campaign" id="experiencia"><div class="campaign-copy"><span class="eyebrow">Mais que maquiagem</span><h2>A beleza começa quando você se descobre.</h2><p>Conheça as experiências que fazem parte da proposta Charms: automaquiagem, colorimetria e consultoria de cor. Serviços apresentados como ideias para uma futura implementação.</p><a href="#sobre" class="cta">Conheça nosso universo</a></div><div class="campaign-art" aria-hidden="true">💋</div></section>
-<section class="section about" id="sobre"><div class="about-art"><span>seu charme ♡</span></div><div><span class="eyebrow">Prazer, somos a Charms</span><h2>Uma loja, muitas formas de ser você.</h2><p>A Charms Makeup é uma loja de beleza localizada em Tietê, no interior de São Paulo. Reunimos maquiagem, skincare, perfumes e acessórios para tornar seu momento de autocuidado ainda mais especial.</p><p>Valorizamos o atendimento próximo, a descoberta de novos produtos e a liberdade de cada pessoa expressar seu próprio estilo.</p><a class="cta" href="#produtos">Conheça a seleção</a></div></section>    <section class="secao" id="avaliacoes">
+  <div class="announcement">BELEZA, PERSONALIDADE E MUITO CHARME ♡</div>
+  <header class="top">
+    <div class="search"><span>⌕</span><input id="search" placeholder="O que você procura?" aria-label="Buscar produtos">
+    </div><a class="brand" href="#inicio"><strong>charms</strong><span>MAKEUP</span></a>
+    <div class="head-actions"><button class="icon-btn"
+        onclick="document.querySelector('#produtos').scrollIntoView({behavior:'smooth'})"
+        aria-label="Ver produtos">♡</button><button class="icon-btn" onclick="toggleCart(true)"
+        aria-label="Abrir sacola">♧<span class="counter" id="count">0</span></button></div>
+  </header>
+  <nav class="nav" aria-label="Navegação principal"><a href="#produtos" onclick="filterCategory('Todos')">Todos os
+      produtos</a><a href="#categorias">Categorias</a><a href="#produtos"
+      onclick="filterCategory('Maquiagem')">Maquiagem</a><a href="#produtos"
+      onclick="filterCategory('Corpo')">Corpo</a><a href="#experiencia">Experiência Charms</a><a href="#sobre">Sobre a
+      loja</a><a href="cadastro.html">Cadastre-se</a></nav>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Bem-vinda ao universo Charms</div>
+        <h1>Seu charme,<br><em>do seu jeito.</em></h1>
+        <p>Um universo de beleza para você experimentar, se expressar e descobrir seus novos favoritos.</p><a
+          href="#produtos" class="cta">Explorar produtos</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="compact"><span></span></div>
+        <div class="lipstick">
+          <div class="tip"></div>
+          <div class="ring"></div>
+          <div class="case"></div>
+        </div>
+        <div class="floating">be you, be charms ♡</div>
+      </div>
+    </section>
+    <div class="trust"><span>♡ Beleza para todos os estilos</span><span>✧ Variedade de produtos e marcas</span><span>⌂
+        Nossa loja fica em Tietê — SP</span></div>
+    <section class="section" id="categorias">
+      <div class="section-heading"><span class="eyebrow">Encontre seus favoritos</span>
+        <h2>Um charme para cada momento</h2>
+        <p>Explore o que combina com você.</p>
+      </div>
+      <div class="cats"><a href="#produtos" class="cat" onclick="filterCategory('Maquiagem')"><span
+            class="emoji">💄</span><strong>Maquiagem</strong></a><a href="#produtos" class="cat"
+          onclick="filterCategory('Corpo')"><span class="emoji">🧴</span><strong>Corpo</strong></a><a href="#produtos"
+          class="cat" onclick="filterCategory('Fragrância')"><span
+            class="emoji">🌸</span><strong>Fragrância</strong></a><a href="#produtos" class="cat"
+          onclick="filterCategory('Acessórios')"><span class="emoji">🖌️</span><strong>Acessórios</strong></a><a
+          href="#produtos" class="cat" onclick="filterCategory('Olhos')"><span
+            class="emoji">🎨</span><strong>Olhos</strong></a></div>
+    </section>
+    <section class="section" id="produtos" style="padding-top:25px">
+      <div class="section-heading"><span class="eyebrow">Seleção Charms</span>
+        <h2>Os queridinhos da vez</h2>
+        <p>Inspirações para sua próxima descoberta.</p>
+      </div>
+      <div class="toolbar">
+        <div class="chips" id="filters"></div><span style="font-size:12px;color:var(--muted)" id="results"></span>
+      </div>
+      <div class="product-grid" id="grid"></div>
+      <p class="note" style="text-align:center;margin-top:25px">Consulte os valores e a disponibilidade dos produtos
+        pelo WhatsApp.</p>
+    </section>
+    <section class="campaign" id="experiencia">
+      <div class="campaign-copy"><span class="eyebrow">Mais que maquiagem</span>
+        <h2>A beleza começa quando você se descobre.</h2>
+        <p>Conheça as experiências que fazem parte da proposta Charms: automaquiagem, colorimetria e consultoria de cor.
+          Serviços apresentados como ideias para uma futura implementação.</p><a href="#sobre" class="cta">Conheça nosso
+          universo</a>
+      </div>
+      <div class="campaign-art" aria-hidden="true">💋</div>
+    </section>
+    <section class="section about" id="sobre">
+      <div class="about-art"><span>seu charme ♡</span></div>
+      <div><span class="eyebrow">Prazer, somos a Charms</span>
+        <h2>Uma loja, muitas formas de ser você.</h2>
+        <p>A Charms Makeup é uma loja de beleza localizada em Tietê, no interior de São Paulo. Reunimos maquiagem,
+          skincare, perfumes e acessórios para tornar seu momento de autocuidado ainda mais especial.</p>
+        <p>Valorizamos o atendimento próximo, a descoberta de novos produtos e a liberdade de cada pessoa expressar seu
+          próprio estilo.</p><a class="cta" href="#produtos">Conheça a seleção</a>
+      </div>
+    </section>
+    <section class="secao" id="avaliacoes">
       <div class="container">
         <h2 class="secao__titulo">O que dizem nossas clientes</h2>
         <p class="secao__subtitulo">Depoimentos de quem já usa</p>
-        <div class="carrossel-depoimentos" role="region" aria-roledescription="carrossel" aria-label="Avaliações das clientes">
-        <div class="depoimentos" id="depoimentos" tabindex="0" aria-label="Use as setas do teclado para navegar pelas avaliações">
-          <blockquote class="depoimento"><p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong></blockquote>
-          <blockquote class="depoimento"><p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong></blockquote>
-          <blockquote class="depoimento"><p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong></blockquote>
-        </div>
-        <div class="carrossel-controles" hidden>
-          <button class="carrossel-botao" type="button" data-direcao="-1" aria-label="Avaliação anterior" aria-controls="depoimentos">&#8592;</button>
-          <span class="carrossel-posicao" aria-live="polite" aria-atomic="true">1 de 3</span>
-          <button class="carrossel-botao" type="button" data-direcao="1" aria-label="Próxima avaliação" aria-controls="depoimentos">&#8594;</button>
-        </div>
+        <div class="carrossel-depoimentos" role="region" aria-roledescription="carrossel"
+          aria-label="Avaliações das clientes">
+          <div class="depoimentos" id="depoimentos" tabindex="0"
+            aria-label="Use as setas do teclado para navegar pelas avaliações">
+            <blockquote class="depoimento">
+              <p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong>
+            </blockquote>
+            <blockquote class="depoimento">
+              <p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong>
+            </blockquote>
+            <blockquote class="depoimento">
+              <p>"Texto de depoimento de exemplo."</p><strong>Nome da cliente</strong>
+            </blockquote>
+          </div>
+          <div class="carrossel-controles" hidden>
+            <button class="carrossel-botao" type="button" data-direcao="-1" aria-label="Avaliação anterior"
+              aria-controls="depoimentos">&#8592;</button>
+            <span class="carrossel-posicao" aria-live="polite" aria-atomic="true">1 de 3</span>
+            <button class="carrossel-botao" type="button" data-direcao="1" aria-label="Próxima avaliação"
+              aria-controls="depoimentos">&#8594;</button>
+          </div>
         </div>
       </div>
     </section>
-</main>
+  </main>
   <footer class="rodape" id="contato">
     <div class="container">
       <div class="rodape__cabecalho">
@@ -57,11 +145,21 @@
           <h2>Conecte-se</h2>
           <div class="rodape__redes">
             <a target="_blank" href="https://www.instagram.com/charmsmake.up/" aria-label="Charms Makeup no Instagram">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
               Instagram
             </a>
-            <a target="_blank" href="https://api.whatsapp.com/send/?phone=15998442821&text&type=phone_number&app_absent=0">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.3 7.9L3 21l1.6-4.7A9 9 0 1 1 21 11.5Z"/><path d="M8 7.5c0 4.5 4 8.5 8.5 8.5l1-2.5-3-1-1 1c-1.5-.7-2.8-2-3.5-3.5l1-1-1-3Z"/></svg>
+            <a target="_blank"
+              href="https://api.whatsapp.com/send/?phone=15998442821&text&type=phone_number&app_absent=0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                aria-hidden="true">
+                <path d="M21 11.5a9 9 0 0 1-13.3 7.9L3 21l1.6-4.7A9 9 0 1 1 21 11.5Z" />
+                <path d="M8 7.5c0 4.5 4 8.5 8.5 8.5l1-2.5-3-1-1 1c-1.5-.7-2.8-2-3.5-3.5l1-1-1-3Z" />
+              </svg>
               WhatsApp
             </a>
           </div>
@@ -84,7 +182,9 @@
         <div>
           <h2>Atendimento</h2>
           <p>Tem alguma dúvida sobre os produtos? Vamos conversar!</p>
-          <a target="_blank" class="rodape__contato" href="https://api.whatsapp.com/send/?phone=15998442821&text&type=phone_number&app_absent=0">Fale conosco pelo WhatsApp <span aria-hidden="true">↗</span></a>
+          <a target="_blank" class="rodape__contato"
+            href="https://api.whatsapp.com/send/?phone=15998442821&text&type=phone_number&app_absent=0">Fale conosco
+            pelo WhatsApp <span aria-hidden="true">↗</span></a>
           <span class="rodape__nota">Consulte os horários de atendimento pelo canal.</span>
         </div>
         <div>
@@ -100,6 +200,22 @@
       </div>
     </div>
   </footer>
-<div class="overlay" id="overlay" onclick="toggleCart(false)"></div><aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-hidden="true" inert aria-label="Sacola de compras"><div class="drawer-head"><h2>Minha sacola</h2><button class="icon-btn" onclick="toggleCart(false)" aria-label="Fechar">✕</button></div><div class="cart-items" id="cart-items"></div><div class="cart-bottom"><div class="total"><span>Subtotal</span><span id="total">R$ 0,00</span></div><p class="note">Carrinho demonstrativo. O site não processa pedidos, pagamentos nem calcula frete.</p><button class="cta" onclick="showToast('O checkout é apenas ilustrativo neste protótipo.')">Continuar compra</button></div></aside><div class="toast" id="toast" role="status"></div>
-<script src="js/produtos.js"></script>
-<script src="js/loja.js"></script></body></html>
+  <div class="overlay" id="overlay" onclick="toggleCart(false)"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-hidden="true" inert
+    aria-label="Sacola de compras">
+    <div class="drawer-head">
+      <h2>Minha sacola</h2><button class="icon-btn" onclick="toggleCart(false)" aria-label="Fechar">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-bottom">
+      <div class="total"><span>Subtotal</span><span id="total">R$ 0,00</span></div>
+      <p class="note">Carrinho demonstrativo. O site não processa pedidos, pagamentos nem calcula frete.</p><button
+        class="cta" onclick="showToast('O checkout é apenas ilustrativo neste protótipo.')">Continuar compra</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/produtos.js"></script>
+  <script src="js/loja.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-// Catálogo identificado a partir das embalagens enviadas.
+// Caminhos relativos ao index.html. Mantenha as fotos em img/.
 // Preencha price com o valor numérico quando os preços forem informados.
 const products = [
   {
@@ -8,7 +8,8 @@ const products = [
     "cat": "Olhos",
     "price": null,
     "emoji": "🎨",
-    "tag": ""
+    "tag": "",
+    "image": "./img/luisance-paleta.jpeg"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@ const products = [
     "cat": "Corpo",
     "price": null,
     "emoji": "🧴",
-    "tag": ""
+    "tag": "",
+    "image": "img/cerave-locao.jpeg"
   },
   {
     "id": 3,
@@ -26,7 +28,8 @@ const products = [
     "cat": "Corpo",
     "price": null,
     "emoji": "💧",
-    "tag": ""
+    "tag": "",
+    "image": "img/creamy-gel.jpeg"
   },
   {
     "id": 4,
@@ -35,7 +38,8 @@ const products = [
     "cat": "Maquiagem",
     "price": null,
     "emoji": "💄",
-    "tag": ""
+    "tag": "",
+    "image": "img/luisance-batom.jpeg"
   },
   {
     "id": 5,
@@ -44,7 +48,8 @@ const products = [
     "cat": "Maquiagem",
     "price": null,
     "emoji": "💄",
-    "tag": ""
+    "tag": "",
+    "image": "img/luisance-gloss.jpeg"
   },
   {
     "id": 6,
@@ -53,7 +58,8 @@ const products = [
     "cat": "Maquiagem",
     "price": null,
     "emoji": "💄",
-    "tag": ""
+    "tag": "",
+    "image": "img/luisance-gloss-magic.jpeg"
   },
   {
     "id": 7,
@@ -62,7 +68,8 @@ const products = [
     "cat": "Olhos",
     "price": null,
     "emoji": "✧",
-    "tag": ""
+    "tag": "",
+    "image": "img/macrilan-cilios.jpeg"
   },
   {
     "id": 8,
@@ -71,7 +78,8 @@ const products = [
     "cat": "Olhos",
     "price": null,
     "emoji": "✧",
-    "tag": ""
+    "tag": "",
+    "image": "img/macrilan-cola.jpeg"
   },
   {
     "id": 9,
@@ -80,7 +88,8 @@ const products = [
     "cat": "Acessórios",
     "price": null,
     "emoji": "🖌️",
-    "tag": ""
+    "tag": "",
+    "image": "img/macrilan-pinceis.jpeg"
   },
   {
     "id": 10,
@@ -89,7 +98,8 @@ const products = [
     "cat": "Maquiagem",
     "price": null,
     "emoji": "💧",
-    "tag": ""
+    "tag": "",
+    "image": "img/maxlove-primer.jpeg"
   },
   {
     "id": 11,
@@ -98,7 +108,8 @@ const products = [
     "cat": "Maquiagem",
     "price": null,
     "emoji": "💄",
-    "tag": ""
+    "tag": "",
+    "image": "img/melu-batom.jpeg"
   },
   {
     "id": 12,
@@ -107,7 +118,8 @@ const products = [
     "cat": "Maquiagem",
     "price": null,
     "emoji": "💄",
-    "tag": ""
+    "tag": "",
+    "image": "img/melu-batom-ultra.jpeg"
   },
   {
     "id": 13,
@@ -116,7 +128,8 @@ const products = [
     "cat": "Corpo",
     "price": null,
     "emoji": "🧴",
-    "tag": ""
+    "tag": "",
+    "image": "img/melu-locao.jpeg"
   },
   {
     "id": 14,
@@ -125,7 +138,8 @@ const products = [
     "cat": "Olhos",
     "price": null,
     "emoji": "🎨",
-    "tag": ""
+    "tag": "",
+    "image": "img/melu-paleta.jpeg"
   },
   {
     "id": 15,
@@ -134,7 +148,8 @@ const products = [
     "cat": "Corpo",
     "price": null,
     "emoji": "🧴",
-    "tag": ""
+    "tag": "",
+    "image": "img/monange-hidra.jpeg"
   },
   {
     "id": 16,
@@ -143,7 +158,8 @@ const products = [
     "cat": "Maquiagem",
     "price": null,
     "emoji": "💧",
-    "tag": ""
+    "tag": "",
+    "image": "img/natura-base.jpeg"
   },
   {
     "id": 17,
@@ -152,7 +168,8 @@ const products = [
     "cat": "Corpo",
     "price": null,
     "emoji": "🧴",
-    "tag": ""
+    "tag": "",
+    "image": "img/poran-hidra.jpeg"
   },
   {
     "id": 18,
@@ -161,7 +178,8 @@ const products = [
     "cat": "Acessórios",
     "price": null,
     "emoji": "✧",
-    "tag": ""
+    "tag": "",
+    "image": "img/rubyrose-esponja.jpeg"
   },
   {
     "id": 19,
@@ -170,7 +188,8 @@ const products = [
     "cat": "Maquiagem",
     "price": null,
     "emoji": "💄",
-    "tag": ""
+    "tag": "",
+    "image": "img/rubyrose-gloss.jpeg"
   },
   {
     "id": 20,
@@ -179,6 +198,27 @@ const products = [
     "cat": "Olhos",
     "price": null,
     "emoji": "🎨",
-    "tag": ""
+    "tag": "",
+    "image": "img/vivai-paleta.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "Body Splash Berry Pie",
+    "brand": "Melu",
+    "cat": "Fragrância",
+    "price": null,
+    "emoji": "🎨",
+    "tag": "",
+    "image": "img/melu-body.jpeg"
+  },
+  {
+    "id": 22,
+    "name": "Hidratante Morango",
+    "brand": "Porán",
+    "cat": "Corpo",
+    "price": null,
+    "emoji": "🎨",
+    "tag": "",
+    "image": "img/poran-hidra1.jpeg"
   }
 ];
