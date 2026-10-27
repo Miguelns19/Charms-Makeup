@@ -1292,3 +1292,38 @@ a:focus-visible {
 .product-art .tag {
   z-index: 1;
 }
+
+/* Categorias em uma faixa horizontal */
+.cats {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  cursor: grab;
+}
+
+.cats::-webkit-scrollbar {
+  display: none;
+}
+
+.cats .cat {
+  flex: 0 0 clamp(150px, 22vw, 230px);
+  scroll-snap-align: start;
+  user-select: none;
+}
+
+.cats.arrastando {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
+@media (max-width: 800px) {
+  .cats {
+    gap: 12px;
+  }
+
+  .cats .cat {
+    flex-basis: 160px;
+  }
+}
