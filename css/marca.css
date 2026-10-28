@@ -1,0 +1,12 @@
+/* A mesma assinatura visual em todas as páginas. */
+.brand { display: inline-flex; align-items: center; justify-content: center; }
+.marca-logo { display: block; width: 160px; height: 160px; object-fit: contain; }
+.top { padding-block: 0; }
+.rodape__marca { display: inline-block; background: var(--cor-fundo); border-radius: var(--raio); }
+.rodape__marca .marca-logo { width: 150px; height: 150px; }
+.details-header-link { font-size: 12px; }
+.search button { border: 0; background: transparent; color: var(--cor-primaria-escura); min-width: 32px; min-height: 32px; }
+@media(max-width:800px) {
+  .brand .marca-logo { width: 120px; height: 120px; }
+  .top { padding-top: 0; padding-bottom: 16px; }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do produto | Charms Makeup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GPN36VDHM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0GPN36VDHM');
+  </script>
+  <link rel="icon" href="zreferencias/logos/logo-preta.svg">
+  <link rel="stylesheet" href="css/produto.css">
+  <link rel="stylesheet" href="css/marca.css">
+</head>
+<body id="topo">
+  <div class="announcement">BELEZA, PERSONALIDADE E MUITO CHARME ♡</div>
+  <header class="top">
+    <form class="search" action="index.html#produtos" role="search">
+      <span aria-hidden="true">⌕</span>
+      <input name="q" type="search" placeholder="O que você procura?" aria-label="Buscar produtos">
+      <button type="submit" aria-label="Pesquisar">→</button>
+    </form>
+    <a class="brand" href="index.html"><img class="marca-logo" src="zreferencias/logos/logo-preta.svg" alt="Charms Makeup" width="160" height="160"></a>
+    <div class="head-actions"><a class="details-header-link" href="cadastro.html">Cadastre-se</a></div>
+  </header>
+  <nav class="nav" aria-label="Navegação principal">
+    <a href="index.html#produtos">Todos os produtos</a>
+    <a href="index.html#categorias">Categorias</a>
+    <a href="index.html#sobre">Sobre a loja</a>
+    <a href="index.html#contato">Atendimento</a>
+  </nav>
+  <main class="details-main" id="conteudo">
+    <nav class="breadcrumbs" aria-label="Você está aqui">
+      <a href="index.html">Início</a><span aria-hidden="true">/</span>
+      <a href="index.html#produtos">Produtos</a><span aria-hidden="true">/</span>
+      <span id="breadcrumb-name" aria-current="page">Detalhes</span>
+    </nav>
+    <div id="product-detail" aria-live="polite"><p>Carregando produto…</p></div>
+    <noscript><p>Ative o JavaScript para visualizar os detalhes dos produtos.</p></noscript>
+    <section class="related-products" id="related-section" aria-labelledby="related-title" hidden>
+      <div class="section-heading"><span class="eyebrow">Continue descobrindo</span>
+        <h2 id="related-title">Mais da mesma categoria</h2>
+      </div>
+      <div class="product-grid" id="related-grid"></div>
+    </section>
+    <a class="back-catalog" href="index.html#produtos">← Voltar para todos os produtos</a>
+  </main>
+<footer class="rodape" id="contato">
+    <div class="container">
+      <div class="rodape__cabecalho">
+        <div>
+          <a class="rodape__marca" href="index.html"><img class="marca-logo" src="zreferencias/logos/logo-preta.svg" alt="Charms Makeup" width="160" height="160"></a>
+          <p>Um toque de charme na sua rotina de beleza.</p>
+        </div>
+        <div class="rodape__conecte">
+          <h2>Conecte-se</h2>
+          <div class="rodape__redes">
+            <a target="_blank" href="https://www.instagram.com/charmsmake.up/" aria-label="Charms Makeup no Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              Instagram
+            </a>
+            <a target="_blank"
+              href="https://api.whatsapp.com/send/?phone=15998442821&text&type=phone_number&app_absent=0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                aria-hidden="true">
+                <path d="M21 11.5a9 9 0 0 1-13.3 7.9L3 21l1.6-4.7A9 9 0 1 1 21 11.5Z" />
+                <path d="M8 7.5c0 4.5 4 8.5 8.5 8.5l1-2.5-3-1-1 1c-1.5-.7-2.8-2-3.5-3.5l1-1-1-3Z" />
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape__colunas">
+        <nav aria-label="Institucional">
+          <h2>Institucional</h2>
+          <a href="index.html#sobre">Sobre a Charms</a>
+          <a href="index.html#categorias">Nossas categorias</a>
+          <a href="index.html#avaliacoes">Avaliações das clientes</a>
+        </nav>
+        <nav aria-label="Explore a loja">
+          <h2>Explore a loja</h2>
+          <a href="index.html#produtos">Produtos em destaque</a>
+          <a href="index.html#categorias">Maquiagem e cosméticos</a>
+          <a target="_blank" href="https://www.instagram.com/charmsmake.up/">Novidades no Instagram</a>
+        </nav>
+        <div>
+          <h2>Atendimento</h2>
+          <p>Tem alguma dúvida sobre os produtos? Vamos conversar!</p>
+          <a target="_blank" class="rodape__contato"
+            href="https://api.whatsapp.com/send/?phone=15998442821&text&type=phone_number&app_absent=0">Fale conosco
+            pelo WhatsApp <span aria-hidden="true">↗</span></a>
+          <span class="rodape__nota">Consulte os horários de atendimento pelo canal.</span>
+        </div>
+        <div>
+          <h2>Como comprar</h2>
+          <p>Gostou de um produto? Entre em contato para consultar disponibilidade, formas de pagamento e entrega.</p>
+          <div class="rodape__detalhe"><span aria-hidden="true">✧</span> Beleza em cada detalhe</div>
+        </div>
+      </div>
+
+      <div class="rodape__base">
+        <small>© 2026 Charms Makeup. Todos os direitos reservados.</small>
+        <a href="index.html#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/produto.js"></script>
+</body>
+</html>

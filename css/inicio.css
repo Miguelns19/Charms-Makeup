@@ -1327,3 +1327,7 @@ a:focus-visible {
     flex-basis: 160px;
   }
 }
+/* A foto, o nome e a marca levam aos detalhes sem interferir na compra. */
+.product-details-link { display: block; }
+.product-details-link:hover h3 { color: var(--cor-primaria-escura); }
+.product-details-link:focus-visible { display: block; outline: 2px solid var(--cor-primaria-escura); outline-offset: 4px; }

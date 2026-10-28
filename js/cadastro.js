@@ -1,16 +1,11 @@
-// ---------- Menu mobile ----------
-const botaoMenu = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
-botaoMenu.addEventListener("click", () => menu.classList.toggle("aberto"));
-
 // ---------- Aviso (toast) ----------
-const aviso = document.querySelector(".aviso");
+const aviso = document.querySelector("#toast");
 let temporizador;
 function mostrarAviso(texto) {
   aviso.textContent = texto;
-  aviso.classList.add("visivel");
+  aviso.classList.add("show");
   clearTimeout(temporizador);
-  temporizador = setTimeout(() => aviso.classList.remove("visivel"), 3000);
+  temporizador = setTimeout(() => aviso.classList.remove("show"), 3000);
 }
 
 // ---------- Máscaras ----------
@@ -41,6 +36,6 @@ form.addEventListener("submit", e => {
 
   // Futuramente: enviar os dados para a API/banco aqui.
   // const dados = Object.fromEntries(new FormData(form));
-  mostrarAviso("Cadastro enviado! (versão de demonstração)");
+  mostrarAviso("Demonstração concluída. Nenhuma conta foi criada e os dados não foram enviados.");
   form.reset();
 });

@@ -1,4 +1,4 @@
-// Caminhos relativos ao index.html. Mantenha as fotos em img/.
+// Catálogo compartilhado pela vitrine e pelas páginas de produto.
 // Preencha price com o valor numérico quando os preços forem informados.
 const products = [
   {
@@ -9,7 +9,8 @@ const products = [
     "price": null,
     "emoji": "🎨",
     "tag": "",
-    "image": "./img/luisance-paleta.jpeg"
+    "image": "./img/luisance-paleta.jpeg",
+    "description": "Paleta de sombras Luisance para compor diferentes combinações na maquiagem dos olhos. Consulte as cores disponíveis com a loja."
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@ const products = [
     "price": null,
     "emoji": "🧴",
     "tag": "",
-    "image": "img/cerave-locao.jpeg"
+    "image": "img/cerave-locao.jpeg",
+    "description": "Loção hidratante CeraVe para os cuidados diários com a pele. Consulte a versão e o volume disponíveis."
   },
   {
     "id": 3,
@@ -29,7 +31,8 @@ const products = [
     "price": null,
     "emoji": "💧",
     "tag": "",
-    "image": "img/creamy-gel.jpeg"
+    "image": "img/creamy-gel.jpeg",
+    "description": "Gel facial Creamy para incluir na sua rotina de cuidados com a pele. Consulte a versão disponível e as orientações da embalagem."
   },
   {
     "id": 4,
@@ -39,7 +42,8 @@ const products = [
     "price": null,
     "emoji": "💄",
     "tag": "",
-    "image": "img/luisance-batom.jpeg"
+    "image": "img/luisance-batom.jpeg",
+    "description": "Batom da linha Nude da Luisance para compor a maquiagem dos lábios. Consulte as tonalidades disponíveis."
   },
   {
     "id": 5,
@@ -49,7 +53,8 @@ const products = [
     "price": null,
     "emoji": "💄",
     "tag": "",
-    "image": "img/luisance-gloss.jpeg"
+    "image": "img/luisance-gloss.jpeg",
+    "description": "Gloss labial Luisance para finalizar a maquiagem dos lábios com brilho. Consulte as cores disponíveis."
   },
   {
     "id": 6,
@@ -59,7 +64,8 @@ const products = [
     "price": null,
     "emoji": "💄",
     "tag": "",
-    "image": "img/luisance-gloss-magic.jpeg"
+    "image": "img/luisance-gloss-magic.jpeg",
+    "description": "Magic Gloss da Luisance para a maquiagem dos lábios. Consulte a tonalidade e a versão disponíveis."
   },
   {
     "id": 7,
@@ -69,7 +75,8 @@ const products = [
     "price": null,
     "emoji": "✧",
     "tag": "",
-    "image": "img/macrilan-cilios.jpeg"
+    "image": "img/macrilan-cilios.jpeg",
+    "description": "Cílios postiços Macrilan com efeito 3D para complementar a maquiagem dos olhos. Consulte o modelo disponível."
   },
   {
     "id": 8,
@@ -79,7 +86,8 @@ const products = [
     "price": null,
     "emoji": "✧",
     "tag": "",
-    "image": "img/macrilan-cola.jpeg"
+    "image": "img/macrilan-cola.jpeg",
+    "description": "Cola Macrilan para aplicação de cílios postiços. Consulte a versão disponível e siga as instruções de aplicação da embalagem."
   },
   {
     "id": 9,
@@ -89,7 +97,8 @@ const products = [
     "price": null,
     "emoji": "🖌️",
     "tag": "",
-    "image": "img/macrilan-pinceis.jpeg"
+    "image": "img/macrilan-pinceis.jpeg",
+    "description": "Kit de pincéis Macrilan para auxiliar na aplicação da maquiagem. Consulte a composição do kit disponível."
   },
   {
     "id": 10,
@@ -99,7 +108,8 @@ const products = [
     "price": null,
     "emoji": "💧",
     "tag": "",
-    "image": "img/maxlove-primer.jpeg"
+    "image": "img/maxlove-primer.jpeg",
+    "description": "Primer Rosa Mosqueta da Max Love para a etapa de preparação da maquiagem. Consulte os detalhes da versão disponível."
   },
   {
     "id": 11,
@@ -109,7 +119,8 @@ const products = [
     "price": null,
     "emoji": "💄",
     "tag": "",
-    "image": "img/melu-batom.jpeg"
+    "image": "img/melu-batom.jpeg",
+    "description": "Batom líquido Melu para a maquiagem dos lábios. Consulte as tonalidades disponíveis."
   },
   {
     "id": 12,
@@ -119,7 +130,8 @@ const products = [
     "price": null,
     "emoji": "💄",
     "tag": "",
-    "image": "img/melu-batom-ultra.jpeg"
+    "image": "img/melu-batom-ultra.jpeg",
+    "description": "Batom Ultra Hidratante Melu para compor a maquiagem dos lábios. Consulte as cores disponíveis."
   },
   {
     "id": 13,
@@ -129,7 +141,8 @@ const products = [
     "price": null,
     "emoji": "🧴",
     "tag": "",
-    "image": "img/melu-locao.jpeg"
+    "image": "img/melu-locao.jpeg",
+    "description": "Loção corporal Melu para a rotina de cuidados com o corpo. Consulte a fragrância e o volume disponíveis."
   },
   {
     "id": 14,
@@ -139,7 +152,8 @@ const products = [
     "price": null,
     "emoji": "🎨",
     "tag": "",
-    "image": "img/melu-paleta.jpeg"
+    "image": "img/melu-paleta.jpeg",
+    "description": "Paleta Melu para a maquiagem das sobrancelhas. Consulte as tonalidades e a versão disponíveis."
   },
   {
     "id": 15,
@@ -149,7 +163,8 @@ const products = [
     "price": null,
     "emoji": "🧴",
     "tag": "",
-    "image": "img/monange-hidra.jpeg"
+    "image": "img/monange-hidra.jpeg",
+    "description": "Hidratante corporal Monange na versão Frutas Vermelhas para os cuidados com a pele do corpo. Consulte o volume disponível."
   },
   {
     "id": 16,
@@ -159,7 +174,8 @@ const products = [
     "price": null,
     "emoji": "💧",
     "tag": "",
-    "image": "img/natura-base.jpeg"
+    "image": "img/natura-base.jpeg",
+    "description": "Base Fluida HD da linha Una, da Natura, para a maquiagem do rosto. Consulte as tonalidades disponíveis para escolher a sua."
   },
   {
     "id": 17,
@@ -169,7 +185,8 @@ const products = [
     "price": null,
     "emoji": "🧴",
     "tag": "",
-    "image": "img/poran-hidra.jpeg"
+    "image": "img/poran-hidra.jpeg",
+    "description": "Hidratante Porán na versão Morango para os cuidados com a pele. Consulte o volume e a apresentação disponíveis."
   },
   {
     "id": 18,
@@ -179,7 +196,8 @@ const products = [
     "price": null,
     "emoji": "✧",
     "tag": "",
-    "image": "img/rubyrose-esponja.jpeg"
+    "image": "img/rubyrose-esponja.jpeg",
+    "description": "Esponja de maquiagem Ruby Rose da linha Midnight para auxiliar na aplicação de produtos na pele. Consulte o modelo disponível."
   },
   {
     "id": 19,
@@ -189,7 +207,8 @@ const products = [
     "price": null,
     "emoji": "💄",
     "tag": "",
-    "image": "img/rubyrose-gloss.jpeg"
+    "image": "img/rubyrose-gloss.jpeg",
+    "description": "Gloss labial Ruby Rose para finalizar a maquiagem dos lábios. Consulte as cores e a versão disponíveis."
   },
   {
     "id": 20,
@@ -199,7 +218,8 @@ const products = [
     "price": null,
     "emoji": "🎨",
     "tag": "",
-    "image": "img/vivai-paleta.jpeg"
+    "image": "img/vivai-paleta.jpeg",
+    "description": "Paleta de sombras Vivai para criar combinações na maquiagem dos olhos. Consulte as tonalidades disponíveis."
   },
   {
     "id": 21,
@@ -209,7 +229,8 @@ const products = [
     "price": null,
     "emoji": "🎨",
     "tag": "",
-    "image": "img/melu-body.jpeg"
+    "image": "img/melu-body.jpeg",
+    "description": "Body Splash Melu na versão Berry Pie para sua rotina de perfumação. Consulte o volume disponível."
   },
   {
     "id": 22,
@@ -219,6 +240,7 @@ const products = [
     "price": null,
     "emoji": "🎨",
     "tag": "",
-    "image": "img/poran-hidra1.jpeg"
+    "image": "img/poran-hidra1.jpeg",
+    "description": "Hidratante Porán na versão Morango, em outra apresentação do catálogo. Consulte com a loja o volume e a diferença entre as versões."
   }
 ];
