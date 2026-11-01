@@ -61,7 +61,7 @@ h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
 
 /* ---------- Produtos ---------- */
 .produtos { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--espaco-md); }
-.produto { background: var(--cor-superficie); overflow: hidden; box-shadow: var(--sombra); display: flex; flex-direction: column; }
+.produto { background: var(--cor-superficie); overflow: hidden; box-shadow: var(--som bra); display: flex; flex-direction: column; }
 .produto__imagem { aspect-ratio: 1; background: var(--cor-primaria-clara); object-fit: cover; width: 100%;}
 .produto__corpo { padding: var(--espaco-sm); display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
 .produto__categoria { font-size: 0.8rem; color: var(--cor-destaque); text-transform: uppercase; letter-spacing: 1px; }

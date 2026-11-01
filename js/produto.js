@@ -35,7 +35,7 @@ if (!produto) {
       <p class="detail-description">${escapar(produto.description || `${produto.name} da marca ${produto.brand}. Consulte as opções disponíveis com a loja.`)}</p>
       <p class="detail-price">${preco(produto)}</p>
       <p class="detail-availability">Consulte a disponibilidade e as opções antes de comprar.</p>
-      <a class="cta detail-contact" href="https://api.whatsapp.com/send/?phone=15998442821&text=${encodeURIComponent(mensagem)}">Consultar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+      <a target="_blank" class="cta detail-contact" href="https://api.whatsapp.com/send/?phone=15998442821&text=${encodeURIComponent(mensagem)}">Consultar pelo WhatsApp <span aria-hidden="true">↗</span></a>
       <p class="detail-help">Atendimento para tirar suas dúvidas sobre cores, versões, pagamento e entrega.</p>
       <dl class="detail-facts">
         <div><dt>Marca</dt><dd>${escapar(produto.brand)}</dd></div>

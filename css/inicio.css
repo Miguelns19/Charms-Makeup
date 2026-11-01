@@ -387,7 +387,7 @@ a {
   background: transparent;
   color: var(--wine);
   padding: 10px 16px;
-  font-size: 12px
+  font-size: 12px;
 }
 
 .chip.active {
