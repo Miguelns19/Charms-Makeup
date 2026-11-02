@@ -1331,3 +1331,7 @@ a:focus-visible {
 .product-details-link { display: block; }
 .product-details-link:hover h3 { color: var(--cor-primaria-escura); }
 .product-details-link:focus-visible { display: block; outline: 2px solid var(--cor-primaria-escura); outline-offset: 4px; }
+
+/* Consulta como ação secundária da vitrine. */
+.product-card .consult-link { background: transparent; color: var(--cor-texto-suave); border: 0; padding: 8px 0; font-size: 11px; letter-spacing: 0; text-transform: none; min-height: 44px; display: flex; align-items: center; justify-content: flex-start; }
+.product-card .consult-link:hover { background: transparent; color: var(--cor-primaria-escura); text-decoration: underline; }
