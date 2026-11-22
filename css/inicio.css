@@ -1193,7 +1193,8 @@ a:focus-visible {
 .product-card {
   display: flex;
   flex-direction: column;
-
+  box-shadow: var(--sombra);
+  padding: 10px;
 }
 
 .product-card .add {
