@@ -182,7 +182,8 @@ a {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  margin-top: 24px
+  margin-top: 24px;
+  transition: 300ms;
 }
 
 .cta:hover {
@@ -322,18 +323,22 @@ a {
 .cats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px
+}
+
+.cats a{
+  margin: auto;
 }
 
 .cat {
   background: linear-gradient(135deg, #faeaf0, #eac1d1);
-  aspect-ratio: 1/1.08;
+  aspect-ratio: 4/5;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 23px
+  padding: 23px;
+  transition: 300ms;
 }
 
 .cat:nth-child(2) {
@@ -364,7 +369,13 @@ a {
   z-index: 1;
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 1.5px
+  letter-spacing: 1.5px;
+  transition: 300ms;
+}
+
+.cat:hover strong{
+  background: #231e20;
+  color: #fffdf9ed;
 }
 
 .toolbar {
@@ -388,6 +399,12 @@ a {
   color: var(--wine);
   padding: 10px 16px;
   font-size: 12px;
+  transition: 300ms;
+}
+
+.chip:hover {
+  background: var(--wine);
+  color: #fff
 }
 
 .chip.active {
@@ -402,7 +419,12 @@ a {
 }
 
 .product-card {
-  min-width: 0
+  min-width: 0;
+  transition: 300ms;
+}
+
+.product-card:hover {
+  scale: 1.02;
 }
 
 .product-art {
